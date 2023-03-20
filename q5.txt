@@ -1,0 +1,8 @@
+1. Does the change inside increment_int_a change the variable a after the function call?
+	increment_int_a does not change the variable a after the function call because the fuction actually updates someval which is only a copy of a. In other words, the fucntion makes a copy of a and increments that instead of a itself so a stays the same.
+
+2. Does the change inside increment_int_b change the variable b after the function call?
+	increment_int_b on the other hand does change the variable b so that the first number inside list b gets incremented. By using a list instead of a integer and updating the first integer in the list, python is able to directly update the variable in the function as someval directly references b without making a copy.
+
+3. If they differ answer why? if not why not?
+	The two fuctions are different and that comes from the types of arguements that both of them use. a uses just a normal integer variable so the incremening funtion makes a copy of the a and updates that instead which leaves a unchanged. b on the other hand is a list so the fuction is able to directly update it with the function. This function updates the first integer of the list.
